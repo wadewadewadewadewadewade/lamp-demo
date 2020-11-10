@@ -2,6 +2,10 @@
   "name": "lamp-demo",
   "version": "1.0.0",
   "description": "A demo LAMP site using TypeScript with minification",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wadewadewadewadewadewade/lamp-demo.git"
+  },
   "main": "/js/index.js",
   "scripts": {
     "build": "rollup -c",
