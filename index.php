@@ -14,6 +14,7 @@ error_reporting(E_ALL);
   <body>
     <div>
       <h1>test</h1>
+      <span id="loading-indicator">Loading...</span>
     </div>
     <?php
 

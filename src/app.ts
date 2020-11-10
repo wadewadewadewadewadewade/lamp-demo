@@ -1,3 +1,4 @@
 import './app.scss';
+import $ from 'jquery';
 
-console.log('wade');
+$('#loading-indicator').remove();

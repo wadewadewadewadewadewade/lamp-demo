@@ -2,7 +2,8 @@
   "compilerOptions": {
     "module": "ES2015",
     "outDir": "app/tsc",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   },
   "files": ["./src/app.ts"],
   "include": ["./src/**/*.ts"]
