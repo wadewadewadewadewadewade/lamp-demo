@@ -1,0 +1,27 @@
+{
+  "name": "lamp-demo",
+  "version": "1.0.0",
+  "description": "A demo LAMP site using TypeScript with minification",
+  "main": "/js/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wade McDaniel",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^6.1.0",
+    "@tscc/rollup-plugin-tscc": "^0.6.0",
+    "closure-webpack-plugin": "^2.3.0",
+    "google-closure-compiler": "^20201102.0.1",
+    "node-sass": "^5.0.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.2"
+  },
+  "dependencies": {
+    "terser": "^5.3.8"
+  }
+}

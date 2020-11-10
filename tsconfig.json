@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "outDir": "app/tsc",
+    "sourceMap": true
+  },
+  "files": ["./src/app.ts"],
+  "include": ["./src/**/*.ts"]
+}

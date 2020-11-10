@@ -1,0 +1,6 @@
+{
+  "modules": {
+      "bundle": "src/app.ts"
+  },
+  "prefix": "build/"
+}
