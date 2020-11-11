@@ -1,3 +1,5 @@
+$breakpoints: (small: 420px, medium: 768px, large: 1024px);
+
 div {
   h1 {
     text-transform: uppercase;
@@ -18,5 +20,17 @@ div {
       display: flex;
       margin:0.5rem 0.25rem;
     }
+  }
+}
+
+@include media("<=small") {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+@include media(">small", "<=large") {
+  .cards {
+    flex-wrap: wrap;
   }
 }

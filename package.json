@@ -21,6 +21,7 @@
     "@types/jquery": "^3.5.4",
     "closure-webpack-plugin": "^2.3.0",
     "google-closure-compiler": "^20201102.0.1",
+    "include-media": "^1.4.9",
     "node-sass": "^5.0.0",
     "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-terser": "^7.0.2",

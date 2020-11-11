@@ -29,7 +29,8 @@ export default {
             include: '**/*.{js,ts}'
         }),
         scss({
-            include: './src/**/*.scss',
+            prefix: `@import "./node_modules/include-media/dist/_include-media.scss";`,
+            include: ['./src/**/*.scss'],
             output: './build/bundle.css'
         })
     ]
