@@ -1,10 +1,20 @@
 {
   "compilerOptions": {
+    "strict": true,
     "module": "ES2015",
-    "outDir": "app/tsc",
+    "lib": ["es5", "es6", "dom"], 
+    "target": "ES5",
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
     "sourceMap": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false
   },
   "files": ["./src/app.ts"],
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
