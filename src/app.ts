@@ -2,4 +2,10 @@
 import './app.scss';
 import $ from 'jquery';
 
-$('#loading-indicator').remove();
+new Promise((resolve) => {
+  console.log('waiting...');
+  setTimeout(() => {
+    $('#loading-indicator').remove();
+    resolve();
+  }, 5000);
+});
