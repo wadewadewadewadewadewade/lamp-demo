@@ -18,6 +18,7 @@ CREATE TEMPORARY TABLE rollupreduced (
   PRIMARY KEY (ID)
 );
 
+-- totall answers
 INSERT INTO rollup (questionsId, questionId, total)
 SELECT
   qs.id AS questionsId,
@@ -36,9 +37,11 @@ ORDER BY
   qs.sortorder,
   count(a.userId) DESC;
 
+-- get most commen answer by question
 INSERT INTO rollupreduced (questionsId, total)
 SELECT questionsId, MAX(total) AS total FROM rollup GROUP BY questionsId;
 
+-- format result
 SELECT
   qs.label AS question,
   q.label AS answer,
