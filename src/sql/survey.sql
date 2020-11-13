@@ -1,0 +1,7 @@
+CREATE TABLE survey (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     `name` CHAR(30) NOT NULL,
+     PRIMARY KEY (id)
+)   ENGINE=INNODB;
+
+INSERT INTO survey (`name`) VALUES ("SIMPLE SURVEY");

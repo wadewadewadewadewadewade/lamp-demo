@@ -1,26 +1,26 @@
 $breakpoints: (small: 420px, medium: 768px, large: 1024px);
 
-div {
-  h1 {
-    text-transform: uppercase;
-  }
+h1 {
+  text-transform: uppercase;
 }
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  div {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    border: solid 1px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-    span {
-      display: flex;
-      margin:0.5rem 0.25rem;
+
+.questions {
+  span {
+    font-weight: bold;
+    + span {
+      font-weight:normal;
+      + span:before {
+        content: '=>';
+        padding: 0 0.25em;
+      }
     }
   }
+}
+
+.question {
+  list-style:none;
+  padding:0;
+  margin:0 0 2rem;
 }
 
 @include media("<=small") {
